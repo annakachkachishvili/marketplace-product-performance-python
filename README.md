@@ -21,7 +21,10 @@ To compare products fairly across wildly different scales, I built a **Sales Per
 
 ![The trust curve — sales accelerate once a product clears a review threshold](images/slide-07.png)
 
-Full written analysis: [`docs/analysis-report.pdf`](docs/analysis-report.pdf) · deck: [`docs/presentation.pdf`](docs/presentation.pdf). Also published on [Behance](https://www.behance.net/annakachkac).
+💻 **Notebook** (the code behind every chart): [`notebook/analysis.ipynb`](notebook/analysis.ipynb)
+· 📄 written analysis: [`docs/analysis-report.pdf`](docs/analysis-report.pdf)
+· 📊 deck: [`docs/presentation.pdf`](docs/presentation.pdf)
+· also on [Behance](https://www.behance.net/annakachkac).
 
 ---
 
@@ -53,13 +56,14 @@ Full written analysis: [`docs/analysis-report.pdf`](docs/analysis-report.pdf) ·
 marketplace-product-performance-python/
 ├── README.md                      ← this file
 ├── notebook/
-│   └── analysis.ipynb             ← the full EDA: cleaning → SPI → correlation → opportunity view
+│   ├── analysis.ipynb             ← full EDA in Python: cleaning → SPI → correlation & trust-curve charts
+│   └── summer.csv                 ← the dataset (1,573 listings × 43 cols) — so the notebook runs
 ├── docs/
 │   ├── analysis-report.pdf        ← full written analysis & findings
 │   ├── presentation.pdf           ← findings deck (charts)
 │   └── dataset-description.pdf    ← dataset & variable description
 └── images/
-    └── slide-*.png                ← charts (heatmap, distributions, opportunity view)
+    └── slide-*.png                ← charts from the deck (heatmap, trust curve, distributions)
 ```
 
 > The dataset is a public marketplace "summer products" sample; the cleaning, the SPI metric, the analysis and the conclusions are my own.
